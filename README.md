@@ -2,7 +2,7 @@
 
 Meu portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puro. Design responsivo, tema dark/light, suporte a dois idiomas (PT/EN) e animações feitas à mão.
 
-🔗 **[pedrolombardi.vercel.app](portfolio-psi-six-7im3e06qol.vercel.app)** ← acesse ao vivo
+🔗 **[pedrolombardi.vercel.app](https://portfolio-psi-six-7im3e06qol.vercel.app)** ← acesse ao vivo
 
 ---
 
