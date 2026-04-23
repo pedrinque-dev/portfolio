@@ -14,7 +14,7 @@ Meu portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puro. Des
 - **Partículas interativas** via Canvas API
 - **Parallax** no background do hero
 - **Fade-in por scroll** com `IntersectionObserver`
-- **Formulário de contato** integrado com EmailJS
+- **Formulário de contato** integrado com Web3Forms
 - **QR Code** do WhatsApp gerado dinamicamente
 - **Design responsivo** — mobile-first, menu hambúrguer
 
@@ -28,7 +28,7 @@ Meu portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puro. Des
 | Estilo | CSS3 com variáveis, flexbox e grid |
 | Lógica | JavaScript ES6+ (sem frameworks) |
 | Animações | Canvas API, CSS transitions |
-| E-mail | EmailJS |
+| E-mail | Web3Forms |
 | QR Code | qrcode.js |
 | Ícones | Font Awesome · Devicons |
 | Deploy | Vercel |
