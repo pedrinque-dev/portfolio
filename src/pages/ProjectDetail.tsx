@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FaGithub } from 'react-icons/fa6';
 import { Link, Navigate, useParams } from 'react-router';
 import { Container } from '@/components/layout/Container';
+import { PageMeta } from '@/components/layout/PageMeta';
 import { Card } from '@/components/ui/Card';
 import { Tag } from '@/components/ui/Tag';
 import { getProjectBySlug } from '@/data/projects';
@@ -21,20 +22,20 @@ export function ProjectDetail() {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, [slug]);
 
-  useEffect(() => {
-    if (project) {
-      document.title = `${t(project.titleKey)} | Pedro Lombardi`;
-    }
-  }, [project, t]);
-
   if (!project) {
     return <Navigate to="/404" replace />;
   }
 
   const title = t(project.titleKey);
+  const description = t(project.descriptionKey);
 
   return (
     <article className="py-12 md:py-20">
+      <PageMeta
+        title={`${title} | Pedro Lombardi`}
+        description={description}
+        path={`/projects/${project.slug}`}
+      />
       <Container className="max-w-4xl">
         <Link
           to="/#projects"
@@ -62,17 +63,30 @@ export function ProjectDetail() {
           </div>
 
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-text-muted">
-            {t(project.descriptionKey)}
+            {description}
           </p>
 
           <div className="mt-8 overflow-hidden rounded-lg border border-border bg-bg-card shadow-card">
-            <img
-              src={project.image}
-              alt={t(project.imageAltKey)}
-              width={1200}
-              height={675}
-              className="aspect-video w-full object-cover"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcSet={`${project.image.avif640} 640w, ${project.image.avif1200} 1200w`}
+                sizes="(max-width: 896px) 92vw, 896px"
+              />
+              <source
+                type="image/webp"
+                srcSet={`${project.image.webp640} 640w, ${project.image.webp1200} 1200w`}
+                sizes="(max-width: 896px) 92vw, 896px"
+              />
+              <img
+                src={project.image.fallback}
+                alt={t(project.imageAltKey)}
+                width={1200}
+                height={675}
+                decoding="async"
+                className="aspect-video w-full object-cover"
+              />
+            </picture>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">

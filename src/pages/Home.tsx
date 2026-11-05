@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router';
+import { PageMeta } from '@/components/layout/PageMeta';
 import { About } from '@/components/sections/About';
 import { Contact } from '@/components/sections/Contact';
 import { Hero } from '@/components/sections/Hero';
@@ -10,10 +11,6 @@ import { Stacks } from '@/components/sections/Stacks';
 export function Home() {
   const { t } = useTranslation();
   const location = useLocation();
-
-  useEffect(() => {
-    document.title = t('meta.homeTitle');
-  }, [t]);
 
   useEffect(() => {
     if (!location.hash) {
@@ -28,6 +25,11 @@ export function Home() {
 
   return (
     <>
+      <PageMeta
+        title={t('meta.homeTitle')}
+        description={t('meta.homeDescription')}
+        path="/"
+      />
       <Hero />
       <About />
       <Stacks />

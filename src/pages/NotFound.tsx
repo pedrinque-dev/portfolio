@@ -1,18 +1,19 @@
 import { ArrowLeft } from 'lucide-react';
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { Container } from '@/components/layout/Container';
+import { PageMeta } from '@/components/layout/PageMeta';
 
 export function NotFound() {
   const { t } = useTranslation();
 
-  useEffect(() => {
-    document.title = t('meta.notFoundTitle');
-  }, [t]);
-
   return (
     <Container className="flex min-h-[75vh] flex-col items-center justify-center py-24 text-center">
+      <PageMeta
+        title={t('meta.notFoundTitle')}
+        description={t('notFound.description')}
+        path="/404"
+      />
       <span className="font-mono text-sm tracking-widest text-brand">
         {t('notFound.code')}
       </span>
