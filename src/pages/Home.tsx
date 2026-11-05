@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router';
-import { Container } from '@/components/layout/Container';
+import { About } from '@/components/sections/About';
+import { Contact } from '@/components/sections/Contact';
+import { Hero } from '@/components/sections/Hero';
+import { Projects } from '@/components/sections/Projects';
+import { Stacks } from '@/components/sections/Stacks';
 
 export function Home() {
   const { t } = useTranslation();
@@ -23,11 +27,13 @@ export function Home() {
   }, [location.hash]);
 
   return (
-    <Container className="py-28">
-      <h1 className="font-display text-4xl font-bold text-text">
-        {t('hero.name')}
-      </h1>
-    </Container>
+    <>
+      <Hero />
+      <About />
+      <Stacks />
+      <Projects />
+      <Contact />
+    </>
   );
 }
 
