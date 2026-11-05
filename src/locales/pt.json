@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "homeTitle": "Pedro Lombardi | Desenvolvedor Full Stack",
+    "homeDescription": "Portfólio de Pedro Lombardi — Desenvolvedor Full Stack em formação (ADS no SENAI), construindo aplicações web com React, TypeScript e Node.js.",
+    "notFoundTitle": "Página não encontrada | Pedro Lombardi"
+  },
+  "nav": {
+    "skipToContent": "Pular para o conteúdo principal",
+    "mainLabel": "Navegação principal",
+    "homeLabel": "Pedro Lombardi — Ir para o início",
+    "about": "Sobre",
+    "stacks": "Tecnologias",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "toggleThemeDark": "Ativar tema escuro",
+    "toggleThemeLight": "Ativar tema claro",
+    "langSwitchLabel": "Selecionar idioma",
+    "langPt": "Português",
+    "langEn": "Inglês"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Pedro Lombardi",
+    "headline": "Desenvolvedor Full Stack. Construo aplicações web com React e Node.js.",
+    "subheadline": "Estudante de Análise e Desenvolvimento de Sistemas no SENAI Félix Guisard, focado em interfaces modernas, APIs REST e bancos de dados relacionais.",
+    "ctaProjects": "Ver Projetos",
+    "ctaResume": "Currículo",
+    "photoAlt": "Retrato de Pedro Lombardi",
+    "socialGithub": "Perfil no GitHub",
+    "socialLinkedin": "Perfil no LinkedIn",
+    "socialWhatsapp": "Conversar no WhatsApp"
+  },
+  "about": {
+    "tag": "whoami",
+    "title": "Sobre mim",
+    "p1": "Sou de Taubaté (SP) e curso Análise e Desenvolvimento de Sistemas no SENAI Félix Guisard. Tenho grande interesse por tecnologia e busco constantemente ampliar meus conhecimentos, sempre com foco em compreender de forma aprofundada como as soluções são construídas.",
+    "p2": "Gosto de aprender na prática e construir aplicações web de ponta a ponta — desde a interface com React e Tailwind CSS até APIs no back-end com Node.js, Express, PHP e bancos de dados MySQL.",
+    "factsTitle": "Informações rápidas",
+    "factEducationLabel": "Formação",
+    "factEducationValue": "Análise e Desenvolvimento de Sistemas",
+    "factInstitutionValue": "SENAI Félix Guisard",
+    "factLocationLabel": "Localização",
+    "factLocationValue": "Taubaté, SP",
+    "factGoalLabel": "Objetivo",
+    "factGoalValue": "Desenvolvedor Full Stack Júnior / Estágio",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "whatsapp": "WhatsApp"
+  },
+  "stacks": {
+    "tag": "tech_stack",
+    "title": "Tecnologias",
+    "subtitle": "Ferramentas e linguagens que utilizo para desenvolver aplicações web.",
+    "categories": {
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "database": "Banco de dados",
+      "tools": "Ferramentas"
+    }
+  },
+  "projects": {
+    "tag": "./projects",
+    "title": "Projetos",
+    "subtitle": "Aplicações desenvolvidas para resolver problemas reais e consolidar fundamentos técnicos.",
+    "comingSoon": "Em breve",
+    "liveDemo": "Live",
+    "viewCode": "GitHub",
+    "caseStudy": "Ver detalhes",
+    "backToProjects": "Voltar para projetos",
+    "contextTitle": "Contexto e Problema",
+    "decisionsTitle": "Decisões Técnicas",
+    "stackTitle": "Tecnologias Utilizadas",
+    "linksTitle": "Links do Projeto",
+    "openLive": "Acessar demonstração ao vivo",
+    "openRepo": "Ver código-fonte no GitHub",
+    "items": {
+      "nutri-naty-ai": {
+        "title": "Nutri Naty AI",
+        "description": "Plataforma de nutrição inteligente com IA integrada para geração de planos alimentares personalizados.",
+        "imageAlt": "Prévia da interface do projeto Nutri Naty AI"
+      },
+      "stride-store": {
+        "title": "Stride Store",
+        "description": "E-commerce de calçados com listagem de produtos, carrinho de compras e layout responsivo.",
+        "imageAlt": "Prévia da interface do projeto Stride Store"
+      },
+      "super-mario": {
+        "title": "Super Mario",
+        "description": "Recriação do clássico Super Mario com movimentação, colisões e animações — tudo no browser, sem frameworks.",
+        "imageAlt": "Prévia da interface do projeto Super Mario"
+      }
+    }
+  },
+  "contact": {
+    "tag": "get_in_touch",
+    "title": "Contato",
+    "subtitle": "Disponível para oportunidades de estágio ou desenvolvedor júnior. Envie uma mensagem ou fale diretamente pelo WhatsApp.",
+    "formAriaLabel": "Formulário de contato",
+    "formName": "Nome",
+    "formNamePh": "Seu nome",
+    "formEmail": "E-mail",
+    "formEmailPh": "seu@email.com",
+    "formMsg": "Mensagem",
+    "formMsgPh": "Sua mensagem...",
+    "formSend": "Enviar mensagem",
+    "formSending": "Enviando...",
+    "formSuccess": "Mensagem enviada! Em breve entro em contato.",
+    "formError": "Erro ao enviar. Tente novamente ou chame no WhatsApp.",
+    "formMissingKey": "Serviço de formulário indisponível no momento. Utilize o WhatsApp ou LinkedIn.",
+    "validation": {
+      "nameMin": "Informe seu nome (mínimo de 2 caracteres).",
+      "emailInvalid": "Informe um endereço de e-mail válido.",
+      "messageMin": "Escreva uma mensagem com pelo menos 10 caracteres."
+    },
+    "socialTitle": "Redes sociais",
+    "whatsappTitle": "Fale no WhatsApp",
+    "whatsappCta": "Iniciar conversa no WhatsApp",
+    "whatsappHint": "Resposta rápida diretamente no aplicativo",
+    "resumeTitle": "Currículo completo",
+    "curriculo": "Baixar Currículo (PDF)"
+  },
+  "footer": {
+    "copyPrefix": "Feito com",
+    "copySuffix": "por Pedro Lombardi · 2026",
+    "backToTop": "Voltar ao topo"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Página não encontrada",
+    "description": "O endereço que você tentou acessar não existe ou foi movido.",
+    "backHome": "Voltar para o início"
+  }
+}

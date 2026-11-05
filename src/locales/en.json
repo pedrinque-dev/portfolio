@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "homeTitle": "Pedro Lombardi | Full Stack Developer",
+    "homeDescription": "Portfolio of Pedro Lombardi — Full Stack Developer studying Systems Analysis and Development at SENAI, building web applications with React, TypeScript, and Node.js.",
+    "notFoundTitle": "Page not found | Pedro Lombardi"
+  },
+  "nav": {
+    "skipToContent": "Skip to main content",
+    "mainLabel": "Main navigation",
+    "homeLabel": "Pedro Lombardi — Go to home",
+    "about": "About",
+    "stacks": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "toggleThemeDark": "Switch to dark theme",
+    "toggleThemeLight": "Switch to light theme",
+    "langSwitchLabel": "Select language",
+    "langPt": "Portuguese",
+    "langEn": "English"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Pedro Lombardi",
+    "headline": "Full Stack Developer. I build web applications with React and Node.js.",
+    "subheadline": "Systems Analysis and Development student at SENAI Félix Guisard, focused on modern interfaces, REST APIs, and relational databases.",
+    "ctaProjects": "View Projects",
+    "ctaResume": "CV",
+    "photoAlt": "Portrait of Pedro Lombardi",
+    "socialGithub": "GitHub profile",
+    "socialLinkedin": "LinkedIn profile",
+    "socialWhatsapp": "Chat on WhatsApp"
+  },
+  "about": {
+    "tag": "whoami",
+    "title": "About me",
+    "p1": "I'm from Taubaté (SP, Brazil) and currently studying Systems Analysis and Development at SENAI Félix Guisard. I have a strong interest in technology and constantly seek to expand my knowledge, always focused on deeply understanding how solutions are built.",
+    "p2": "I enjoy learning by doing and building end-to-end web applications — from interfaces with React and Tailwind CSS to back-end APIs with Node.js, Express, PHP, and MySQL databases.",
+    "factsTitle": "Quick facts",
+    "factEducationLabel": "Education",
+    "factEducationValue": "Systems Analysis and Development",
+    "factInstitutionValue": "SENAI Félix Guisard",
+    "factLocationLabel": "Location",
+    "factLocationValue": "Taubaté, SP — Brazil",
+    "factGoalLabel": "Looking for",
+    "factGoalValue": "Junior Full Stack Developer / Internship",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "whatsapp": "WhatsApp"
+  },
+  "stacks": {
+    "tag": "tech_stack",
+    "title": "Technologies",
+    "subtitle": "Tools and languages I use to build web applications.",
+    "categories": {
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "database": "Database",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "tag": "./projects",
+    "title": "Projects",
+    "subtitle": "Applications built to solve real problems and strengthen core engineering fundamentals.",
+    "comingSoon": "Coming soon",
+    "liveDemo": "Live",
+    "viewCode": "GitHub",
+    "caseStudy": "View details",
+    "backToProjects": "Back to projects",
+    "contextTitle": "Context & Problem",
+    "decisionsTitle": "Technical Decisions",
+    "stackTitle": "Technologies Used",
+    "linksTitle": "Project Links",
+    "openLive": "Open live demo",
+    "openRepo": "View source code on GitHub",
+    "items": {
+      "nutri-naty-ai": {
+        "title": "Nutri Naty AI",
+        "description": "Intelligent nutrition platform with integrated AI for generating personalised meal plans.",
+        "imageAlt": "Preview of the Nutri Naty AI interface"
+      },
+      "stride-store": {
+        "title": "Stride Store",
+        "description": "Footwear e-commerce with product listing, shopping cart and responsive layout.",
+        "imageAlt": "Preview of the Stride Store interface"
+      },
+      "super-mario": {
+        "title": "Super Mario",
+        "description": "Classic Super Mario recreation with movement, collisions and animations — all in the browser, no frameworks.",
+        "imageAlt": "Preview of the Super Mario game interface"
+      }
+    }
+  },
+  "contact": {
+    "tag": "get_in_touch",
+    "title": "Contact",
+    "subtitle": "Available for internship or junior developer opportunities. Send a message or reach out directly on WhatsApp.",
+    "formAriaLabel": "Contact form",
+    "formName": "Name",
+    "formNamePh": "Your name",
+    "formEmail": "E-mail",
+    "formEmailPh": "you@email.com",
+    "formMsg": "Message",
+    "formMsgPh": "Your message...",
+    "formSend": "Send message",
+    "formSending": "Sending...",
+    "formSuccess": "Message sent! I'll get back to you soon.",
+    "formError": "Failed to send. Please try again or reach out on WhatsApp.",
+    "formMissingKey": "Contact form is currently unavailable. Please reach out via WhatsApp or LinkedIn.",
+    "validation": {
+      "nameMin": "Please enter your name (at least 2 characters).",
+      "emailInvalid": "Please enter a valid e-mail address.",
+      "messageMin": "Please write a message with at least 10 characters."
+    },
+    "socialTitle": "Social media",
+    "whatsappTitle": "Chat on WhatsApp",
+    "whatsappCta": "Start chat on WhatsApp",
+    "whatsappHint": "Quick reply directly in the app",
+    "resumeTitle": "Full Resume",
+    "curriculo": "Download CV (PDF)"
+  },
+  "footer": {
+    "copyPrefix": "Made with",
+    "copySuffix": "by Pedro Lombardi · 2026",
+    "backToTop": "Back to top"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to home"
+  }
+}

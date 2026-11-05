@@ -1,377 +1,83 @@
-<!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark" data-lang="pt">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pedro Lombardi — Desenvolvedor Full Stack" />
-  <title>Pedro Lombardi | Dev Full Stack</title>
-
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-  <header class="navbar" id="navbar" role="banner">
-    <a href="#hero" class="logo" aria-label="Pedro Lombardi Home">&lt;/PL&gt;</a>
-
-    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#about" class="nav-link" data-i18n="navAbout">Sobre</a>
-      <a href="#stacks" class="nav-link" data-i18n="navStacks">Stacks</a>
-      <a href="#projects" class="nav-link" data-i18n="navProjects">Projetos</a>
-      <a href="#contact" class="nav-link" data-i18n="navContact">Contato</a>
-    </nav>
-
-    <div class="nav-controls">
-      <button class="btn-icon lang-toggle" id="langToggle" aria-label="Toggle language">
-        <span id="langFlag">🇺🇸</span>
-        <span id="langLabel" class="lang-label">EN</span>
-      </button>
-
-      <button class="btn-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="fa-solid fa-moon" id="themeIcon"></i>
-      </button>
-
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="hero" id="hero" aria-label="Hero">
-      <canvas id="particleCanvas" aria-hidden="true"></canvas>
-      <div class="hero-bg-layer" id="heroBg" aria-hidden="true"></div>
-
-      <div class="hero-inner">
-        <div class="hero-photo-wrap">
-          <div class="hero-photo" id="heroPhoto">
-            <img src="assets/foto.jpg" alt="Pedro Lombardi" />
-          </div>
-          <div class="hero-photo-ring" aria-hidden="true"></div>
-        </div>
-
-        <div class="hero-text">
-          <p class="hero-greeting" data-i18n="heroGreeting">Olá, eu sou</p>
-          <h1 class="hero-name">Pedro Lombardi</h1>
-          <div class="hero-typed-wrap" aria-live="polite">
-            <span class="typed-cursor" aria-hidden="true">&gt;</span>
-            <span class="hero-typed" id="heroTyped"></span>
-            <span class="typed-caret" aria-hidden="true">_</span>
-          </div>
-
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary" data-i18n="heroCTAProjects">Ver Projetos</a>
-            <a href="assets/curriculo.pdf" target="_blank" rel="noopener" class="btn btn-outline"
-              data-i18n="heroCTACurriculo">Currículo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <span></span>
-      </div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="aboutTitle">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-tag" data-i18n="aboutTag">whoami</span>
-          <h2 class="section-title" id="aboutTitle" data-i18n="aboutTitle">Sobre mim</h2>
-        </div>
-
-        <div class="about-grid fade-in">
-          <div class="about-text">
-            <p data-i18n="aboutP1">
-              Sou de Taubaté e atualmente curso Análise e Desenvolvimento de Sistemas no SENAI Félix Guisard. Tenho
-              grande interesse por tecnologia e busco constantemente ampliar meus conhecimentos, sempre com foco em
-              compreender de forma aprofundada como as soluções são construídas.
-            </p>
-            <p data-i18n="aboutP2">
-              Tenho perfil proativo, gosto de aprender na prática e me envolver em projetos que me desafiem a evoluir.
-              Valorizo organização, clareza e consistência em tudo o que faço, e estou sempre em busca de crescimento
-              pessoal e profissional, construindo uma base sólida para minha carreira como desenvolvedor Full Stack.
-            </p>
-
-            <div class="about-socials">
-              <a href="https://github.com/pedrinque-dev" class="social-chip" aria-label="GitHub" target="_blank"
-                rel="noopener">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-              <a href="https://linkedin.com/in/pedro-lombardi-7781522b7" class="social-chip" aria-label="LinkedIn"
-                target="_blank" rel="noopener">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
-              </a>
-              <a href="#contact" class="social-chip" aria-label="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
-              </a>
-            </div>
-          </div>
-
-          <div class="about-visual fade-in">
-            <div class="about-card-accent">
-              <div class="about-stat"><span class="stat-num">Full</span><span class="stat-label"
-                  data-i18n="statStack">Stack</span></div>
-              <div class="about-divider"></div>
-              <div class="about-stat"><span class="stat-num">UI</span><span class="stat-label"
-                  data-i18n="statIdea">orientado a detalhe</span></div>
-              <div class="about-divider"></div>
-              <div class="about-stat"><span class="stat-num">Web</span><span class="stat-label" data-i18n="statGit">do
-                  front ao back</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="stacks" aria-labelledby="stacksTitle">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-tag" data-i18n="stacksTag">tech_stack</span>
-          <h2 class="section-title" id="stacksTitle" data-i18n="stacksTitle">Tecnologias</h2>
-        </div>
-
-        <div class="stacks-grid fade-in" role="list" aria-label="Tech stacks">
-          <div class="stack-card" role="listitem">
-            <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-php-plain colored" aria-hidden="true"></i>
-            <span>PHP</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-vitejs-plain colored" aria-hidden="true"></i>
-            <span>Vite</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-react-original colored" aria-hidden="true"></i>
-            <span>React</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-nodejs-plain colored" aria-hidden="true"></i>
-            <span>Node.js</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-express-original" aria-hidden="true"></i>
-            <span>Express</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-tailwindcss-plain colored" aria-hidden="true"></i>
-            <span>Tailwind CSS</span>
-          </div>
-          <div class="stack-card" role="listitem">
-            <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
-            <span>MySQL</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects" aria-labelledby="projectsTitle">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-tag" data-i18n="projectsTag">./projects</span>
-          <h2 class="section-title" id="projectsTitle" data-i18n="projectsTitle">Projetos</h2>
-        </div>
-
-        <div class="projects-grid">
-
-          <article class="project-card fade-in" aria-label="Nutri Naty AI">
-            <div class="project-img">
-              <img src="assets/nutri-naty.png" alt="Nutri Naty AI preview" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-name">Nutri Naty AI</h3>
-              <p class="project-desc" data-i18n="proj1Desc">
-                Plataforma de nutrição inteligente com IA integrada para geração de planos alimentares personalizados.
-              </p>
-              <div class="project-tags">
-                <span class="tag">REACT</span>
-                <span class="tag">AI</span>
-                <span class="tag">Node.js</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/pedrinque-dev/nutri-naty-ai" class="btn btn-sm btn-ghost" target="_blank"
-                  rel="noopener" aria-label="GitHub - Nutri Naty AI">
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <button class="btn btn-sm btn-disabled" disabled aria-label="Em breve">
-                  <i class="fa-solid fa-clock"></i>
-                  <span data-i18n="comingSoon">Em breve</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card fade-in" aria-label="Stride Store">
-            <div class="project-img">
-              <img src="assets/stride-store.png" alt="Stride Store preview" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-name">Stride Store</h3>
-              <p class="project-desc" data-i18n="proj2Desc">
-                E-commerce moderno de calçados com carrinho de compras, filtragem por categoria e checkout integrado.
-              </p>
-              <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/pedrinque-dev/stride-store" class="btn btn-sm btn-ghost" target="_blank"
-                  rel="noopener" aria-label="GitHub - Stride Store">
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://stride-store-alpha.vercel.app" class="btn btn-sm btn-primary" target="_blank"
-                  rel="noopener" aria-label="Live demo - Stride Store">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card fade-in" aria-label="Super Mario">
-            <div class="project-img">
-              <img src="assets/super-mario.png" alt="Super Mario preview" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-name">Super Mario</h3>
-              <p class="project-desc" data-i18n="proj3Desc">
-                Recriação do clássico Super Mario em JavaScript puro com física, colisões, animações e fases
-                customizadas.
-              </p>
-              <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/pedrinque-dev/super-mario" class="btn btn-sm btn-ghost" target="_blank"
-                  rel="noopener" aria-label="GitHub - Super Mario">
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://super-mario-ten-peach.vercel.app" class="btn btn-sm btn-primary" target="_blank"
-                  rel="noopener" aria-label="Live demo - Super Mario">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                </a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contact" aria-labelledby="contactTitle">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-tag" data-i18n="contactTag">get_in_touch</span>
-          <h2 class="section-title" id="contactTitle" data-i18n="contactTitle">Contato</h2>
-        </div>
-
-        <div class="contact-grid fade-in">
-
-          <div class="contact-form-wrap">
-            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
-              <div class="form-group">
-                <label for="formName" data-i18n="formName">Nome</label>
-                <input type="text" id="formName" name="name" autocomplete="name" data-i18n-placeholder="formNamePh"
-                  placeholder="Seu nome" required />
-              </div>
-              <div class="form-group">
-                <label for="formEmail" data-i18n="formEmail">E-mail</label>
-                <input type="email" id="formEmail" name="email" autocomplete="email" data-i18n-placeholder="formEmailPh"
-                  placeholder="seu@email.com" required />
-              </div>
-              <div class="form-group">
-                <label for="formMsg" data-i18n="formMsg">Mensagem</label>
-                <textarea id="formMsg" name="message" rows="5" data-i18n-placeholder="formMsgPh"
-                  placeholder="Sua mensagem..." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn" data-i18n="formSend">Enviar
-                mensagem</button>
-              <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
-            </form>
-          </div>
-
-          <div class="contact-info">
-
-            <div class="contact-socials">
-              <h3 data-i18n="socialTitle">Redes sociais</h3>
-              <div class="social-row">
-                <a href="https://github.com/pedrinque-dev" class="social-icon-link" aria-label="GitHub" target="_blank"
-                  rel="noopener">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/pedro-lombardi-7781522b7" class="social-icon-link"
-                  aria-label="LinkedIn" target="_blank" rel="noopener">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/pedro.augg/" class="social-icon-link" aria-label="Instagram"
-                  target="_blank" rel="noopener">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="whatsapp-wrap">
-              <h3 data-i18n="whatsappTitle">Fale no WhatsApp</h3>
-              <div id="qrcode" aria-label="QR Code WhatsApp"></div>
-              <p class="qr-hint" data-i18n="qrHint">Escaneie para conversar</p>
-            </div>
-
-            <div class="curriculum-wrap">
-              <a href="assets/curriculo.pdf" target="_blank" rel="noopener"
-                class="btn btn-outline btn-full curriculo-btn">
-                <i class="fa-solid fa-file-lines"></i>
-                <span data-i18n="curriculo">Currículo</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="container footer-inner">
-      <span class="footer-logo">&lt;/PL&gt;</span>
-      <p class="footer-copy" data-i18n="footerCopy">
-        Feito com <span class="heart">♥</span> por Pedro Lombardi · 2026
-      </p>
-      <a href="#hero" class="footer-top" aria-label="Voltar ao topo">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Pedro Lombardi | Desenvolvedor Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de Pedro Lombardi — Desenvolvedor Full Stack em formação (ADS no SENAI), construindo aplicações web com React, TypeScript e Node.js."
+    />
+    <link rel="canonical" href="https://portfolio-psi-six-7im3e06qol.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pedro Lombardi" />
+    <meta property="og:title" content="Pedro Lombardi | Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Portfólio de Pedro Lombardi — Desenvolvedor Full Stack em formação (ADS no SENAI), construindo aplicações web com React, TypeScript e Node.js."
+    />
+    <meta property="og:url" content="https://portfolio-psi-six-7im3e06qol.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://portfolio-psi-six-7im3e06qol.vercel.app/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pedro Lombardi | Desenvolvedor Full Stack" />
+    <meta
+      name="twitter:description"
+      content="Portfólio de Pedro Lombardi — Desenvolvedor Full Stack em formação (ADS no SENAI), construindo aplicações web com React, TypeScript e Node.js."
+    />
+    <meta
+      name="twitter:image"
+      content="https://portfolio-psi-six-7im3e06qol.vercel.app/og-image.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pedro Lombardi",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://portfolio-psi-six-7im3e06qol.vercel.app/",
+        "email": "mailto:lombardipedro169@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Taubaté",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "SENAI Félix Guisard"
+        },
+        "sameAs": [
+          "https://github.com/pedrinque-dev",
+          "https://linkedin.com/in/pedro-lombardi-7781522b7",
+          "https://www.instagram.com/pedro.augg/"
+        ]
+      }
+    </script>
+    <script>
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem('pl-theme');
+          var theme = storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+          var storedLang = localStorage.getItem('pl-lang');
+          var lang = storedLang === 'en' ? 'en' : 'pt-BR';
+          document.documentElement.setAttribute('lang', lang);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

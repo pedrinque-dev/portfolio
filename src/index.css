@@ -1,0 +1,131 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root,
+[data-theme='dark'] {
+  --bg: #0a0a0a;
+  --bg-alt: #111111;
+  --bg-card: #1a1a1a;
+  --bg-input: #151515;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-red: rgba(230, 57, 70, 0.45);
+  --text: #f0f0f0;
+  --text-muted: #b3b3b3;
+  --text-faint: #8e8e8e;
+  --navbar-bg: rgba(10, 10, 10, 0.85);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --hover-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: #f8f7f5;
+  --bg-alt: #efefed;
+  --bg-card: #ffffff;
+  --bg-input: #f3f3f1;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-red: rgba(214, 40, 57, 0.35);
+  --text: #111111;
+  --text-muted: #4a4a4a;
+  --text-faint: #666666;
+  --navbar-bg: rgba(248, 247, 245, 0.9);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --hover-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  color-scheme: light;
+}
+
+@theme {
+  --color-brand: #e63946;
+  --color-brand-bright: #ff2d2d;
+  --color-brand-dim: rgba(230, 57, 70, 0.15);
+  --color-brand-glow: rgba(230, 57, 70, 0.35);
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-bg-card: var(--bg-card);
+  --color-bg-input: var(--bg-input);
+  --color-border: var(--border);
+  --color-border-brand: var(--border-red);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-navbar: var(--navbar-bg);
+
+  --font-display: 'Clash Display', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --shadow-card: var(--card-shadow);
+  --shadow-brand: 0 0 24px rgba(230, 57, 70, 0.35);
+  --shadow-hover: var(--hover-shadow);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+:focus-visible {
+  outline: 2px solid #e63946;
+  outline-offset: 3px;
+}
