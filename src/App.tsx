@@ -1,6 +1,11 @@
+import { ThemeProvider } from '@/components/layout/ThemeProvider';
+
 export function App() {
-  return <main>Pedro Lombardi</main>;
+  return (
+    <ThemeProvider>
+      <main>Pedro Lombardi</main>
+    </ThemeProvider>
+  );
 }
 
 export default App;
-
