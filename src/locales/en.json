@@ -36,7 +36,7 @@
     "tag": "whoami",
     "title": "About me",
     "p1": "I'm from Taubaté (SP, Brazil) and currently studying Systems Analysis and Development at SENAI Félix Guisard. I have a strong interest in technology and constantly seek to expand my knowledge, always focused on deeply understanding how solutions are built.",
-    "p2": "I enjoy learning by doing and building end-to-end web applications — from interfaces with React and Tailwind CSS to back-end APIs with Node.js, Express, PHP, and MySQL databases.",
+    "p2": "I enjoy learning by doing and building end-to-end web applications — from interfaces with React, TypeScript, and Tailwind CSS to back-end APIs with Python, FastAPI, Django, Node.js, and PostgreSQL databases.",
     "factsTitle": "Quick facts",
     "factEducationLabel": "Education",
     "factEducationValue": "Systems Analysis and Development",

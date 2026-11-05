@@ -1,15 +1,16 @@
 import type { IconType } from 'react-icons';
-import { FaCss3Alt } from 'react-icons/fa6';
 import {
-  SiExpress,
-  SiHtml5,
+  SiDjango,
+  SiDocker,
+  SiFastapi,
+  SiGit,
   SiJavascript,
-  SiMysql,
   SiNodedotjs,
-  SiPhp,
+  SiPostgresql,
+  SiPython,
   SiReact,
   SiTailwindcss,
-  SiVite,
+  SiTypescript,
 } from 'react-icons/si';
 
 export type StackCategory = 'frontend' | 'backend' | 'database' | 'tools';
@@ -22,22 +23,27 @@ export interface StackItem {
   color: string;
 }
 
-export const stackCategories: StackCategory[] = ['frontend', 'backend', 'database', 'tools'];
+export const stackCategories: StackCategory[] = [
+  'frontend',
+  'backend',
+  'database',
+  'tools',
+];
 
 export const stackItems: StackItem[] = [
   {
-    id: 'html5',
-    name: 'HTML5',
+    id: 'react',
+    name: 'React',
     category: 'frontend',
-    icon: SiHtml5,
-    color: '#E34F26',
+    icon: SiReact,
+    color: '#61DAFB',
   },
   {
-    id: 'css3',
-    name: 'CSS3',
+    id: 'typescript',
+    name: 'TypeScript',
     category: 'frontend',
-    icon: FaCss3Alt,
-    color: '#1572B6',
+    icon: SiTypescript,
+    color: '#3178C6',
   },
   {
     id: 'javascript',
@@ -47,18 +53,32 @@ export const stackItems: StackItem[] = [
     color: '#F7DF1E',
   },
   {
-    id: 'react',
-    name: 'React',
-    category: 'frontend',
-    icon: SiReact,
-    color: '#61DAFB',
-  },
-  {
     id: 'tailwindcss',
     name: 'Tailwind CSS',
     category: 'frontend',
     icon: SiTailwindcss,
     color: '#06B6D4',
+  },
+  {
+    id: 'python',
+    name: 'Python',
+    category: 'backend',
+    icon: SiPython,
+    color: '#3776AB',
+  },
+  {
+    id: 'fastapi',
+    name: 'FastAPI',
+    category: 'backend',
+    icon: SiFastapi,
+    color: '#009688',
+  },
+  {
+    id: 'django',
+    name: 'Django',
+    category: 'backend',
+    icon: SiDjango,
+    color: '#44B78B',
   },
   {
     id: 'nodejs',
@@ -68,31 +88,24 @@ export const stackItems: StackItem[] = [
     color: '#339933',
   },
   {
-    id: 'express',
-    name: 'Express',
-    category: 'backend',
-    icon: SiExpress,
-    color: 'currentColor',
-  },
-  {
-    id: 'php',
-    name: 'PHP',
-    category: 'backend',
-    icon: SiPhp,
-    color: '#777BB4',
-  },
-  {
-    id: 'mysql',
-    name: 'MySQL',
+    id: 'postgresql',
+    name: 'PostgreSQL',
     category: 'database',
-    icon: SiMysql,
-    color: '#4479A1',
+    icon: SiPostgresql,
+    color: '#4169E1',
   },
   {
-    id: 'vite',
-    name: 'Vite',
+    id: 'docker',
+    name: 'Docker',
     category: 'tools',
-    icon: SiVite,
-    color: '#646CFF',
+    icon: SiDocker,
+    color: '#2496ED',
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    category: 'tools',
+    icon: SiGit,
+    color: '#F05032',
   },
 ];

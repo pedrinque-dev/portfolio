@@ -36,7 +36,7 @@
     "tag": "whoami",
     "title": "Sobre mim",
     "p1": "Sou de Taubaté (SP) e curso Análise e Desenvolvimento de Sistemas no SENAI Félix Guisard. Tenho grande interesse por tecnologia e busco constantemente ampliar meus conhecimentos, sempre com foco em compreender de forma aprofundada como as soluções são construídas.",
-    "p2": "Gosto de aprender na prática e construir aplicações web de ponta a ponta — desde a interface com React e Tailwind CSS até APIs no back-end com Node.js, Express, PHP e bancos de dados MySQL.",
+    "p2": "Gosto de aprender na prática e construir aplicações web de ponta a ponta — desde a interface com React, TypeScript e Tailwind CSS até APIs no back-end com Python, FastAPI, Django, Node.js e bancos de dados PostgreSQL.",
     "factsTitle": "Informações rápidas",
     "factEducationLabel": "Formação",
     "factEducationValue": "Análise e Desenvolvimento de Sistemas",
