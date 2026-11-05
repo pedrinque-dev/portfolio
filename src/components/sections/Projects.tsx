@@ -46,14 +46,27 @@ export function Projects() {
                   aria-label={`${title} — ${t('projects.caseStudy')}`}
                   className="relative aspect-video overflow-hidden bg-bg-alt"
                 >
-                  <img
-                    src={project.image}
-                    alt={t(project.imageAltKey)}
-                    width={640}
-                    height={360}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcSet={`${project.image.avif640} 640w, ${project.image.avif1200} 1200w`}
+                      sizes="(max-width: 768px) 92vw, (max-width: 1024px) 45vw, 380px"
+                    />
+                    <source
+                      type="image/webp"
+                      srcSet={`${project.image.webp640} 640w, ${project.image.webp1200} 1200w`}
+                      sizes="(max-width: 768px) 92vw, (max-width: 1024px) 45vw, 380px"
+                    />
+                    <img
+                      src={project.image.fallback}
+                      alt={t(project.imageAltKey)}
+                      width={640}
+                      height={360}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </picture>
                   {!project.liveUrl ? (
                     <span className="absolute top-3 right-3 rounded-full border border-border bg-bg/90 px-3 py-1 font-mono text-xs font-medium text-text backdrop-blur-sm">
                       {t('projects.comingSoon')}

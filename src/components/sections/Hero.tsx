@@ -2,7 +2,11 @@ import { ArrowRight, FileText } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa6';
-import heroPhoto from '@/assets/foto.jpg';
+import heroPhotoAvif256 from '@/assets/foto-256.avif';
+import heroPhotoWebp256 from '@/assets/foto-256.webp';
+import heroPhotoAvif512 from '@/assets/foto-512.avif';
+import heroPhotoWebp512 from '@/assets/foto-512.webp';
+import heroPhotoFallback from '@/assets/foto.jpg';
 import { Container } from '@/components/layout/Container';
 import { siteConfig } from '@/config/site';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
@@ -114,14 +118,27 @@ export function Hero() {
             className="relative shrink-0"
           >
             <div className="relative h-44 w-44 sm:h-56 sm:w-56 lg:h-64 lg:w-64 overflow-hidden rounded-full border-2 border-border-brand bg-bg-card shadow-card">
-              <img
-                src={heroPhoto}
-                alt={t('hero.photoAlt')}
-                width={256}
-                height={256}
-                fetchPriority="high"
-                className="h-full w-full object-cover"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet={`${heroPhotoAvif256} 256w, ${heroPhotoAvif512} 512w`}
+                  sizes="(max-width: 640px) 176px, (max-width: 1024px) 224px, 256px"
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${heroPhotoWebp256} 256w, ${heroPhotoWebp512} 512w`}
+                  sizes="(max-width: 640px) 176px, (max-width: 1024px) 224px, 256px"
+                />
+                <img
+                  src={heroPhotoFallback}
+                  alt={t('hero.photoAlt')}
+                  width={256}
+                  height={256}
+                  fetchPriority="high"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
+              </picture>
             </div>
           </motion.div>
         </div>
