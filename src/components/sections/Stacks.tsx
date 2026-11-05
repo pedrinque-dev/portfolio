@@ -49,9 +49,7 @@ export function Stacks() {
                           style={{ color: item.color }}
                           aria-hidden="true"
                         />
-                        <span className="font-mono text-xs font-medium text-text">
-                          {item.name}
-                        </span>
+                        <span className="font-mono text-xs font-medium text-text">{item.name}</span>
                       </li>
                     );
                   })}

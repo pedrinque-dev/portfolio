@@ -10,8 +10,7 @@ export function ThemeToggle({ className = '' }: ThemeToggleProps) {
   const { theme, toggleTheme } = useTheme();
   const { t } = useTranslation();
 
-  const label =
-    theme === 'dark' ? t('nav.toggleThemeLight') : t('nav.toggleThemeDark');
+  const label = theme === 'dark' ? t('nav.toggleThemeLight') : t('nav.toggleThemeDark');
 
   return (
     <button

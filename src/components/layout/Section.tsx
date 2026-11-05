@@ -47,11 +47,7 @@ export function Section({
             aria-hidden="true"
             className="mt-2.5 block h-0.5 w-10 rounded-full bg-gradient-to-r from-brand to-transparent"
           />
-          {subtitle ? (
-            <p className="mt-4 max-w-2xl text-base text-text-muted">
-              {subtitle}
-            </p>
-          ) : null}
+          {subtitle ? <p className="mt-4 max-w-2xl text-base text-text-muted">{subtitle}</p> : null}
         </div>
         {children}
       </Container>

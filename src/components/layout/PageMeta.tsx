@@ -41,4 +41,3 @@ export function PageMeta({ title, description, path = '/' }: PageMetaProps) {
 
   return null;
 }
-

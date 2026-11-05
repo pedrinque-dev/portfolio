@@ -6,9 +6,5 @@ export interface ContainerProps {
 }
 
 export function Container({ children, className = '' }: ContainerProps) {
-  return (
-    <div className={`mx-auto w-[min(1200px,92vw)] ${className}`}>
-      {children}
-    </div>
-  );
+  return <div className={`mx-auto w-[min(1200px,92vw)] ${className}`}>{children}</div>;
 }

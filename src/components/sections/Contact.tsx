@@ -113,11 +113,7 @@ export function Contact() {
                 {...register('name')}
               />
               {errors.name?.message ? (
-                <p
-                  id="contact-name-error"
-                  role="alert"
-                  className="font-mono text-xs text-brand"
-                >
+                <p id="contact-name-error" role="alert" className="font-mono text-xs text-brand">
                   {t(errors.name.message)}
                 </p>
               ) : null}
@@ -136,18 +132,12 @@ export function Contact() {
                 autoComplete="email"
                 placeholder={t('contact.formEmailPh')}
                 aria-invalid={Boolean(errors.email)}
-                aria-describedby={
-                  errors.email ? 'contact-email-error' : undefined
-                }
+                aria-describedby={errors.email ? 'contact-email-error' : undefined}
                 className="w-full rounded-md border border-border bg-bg-input px-4 py-3 text-sm text-text placeholder:text-text-faint transition-colors duration-150 focus:border-border-brand focus:outline-none"
                 {...register('email')}
               />
               {errors.email?.message ? (
-                <p
-                  id="contact-email-error"
-                  role="alert"
-                  className="font-mono text-xs text-brand"
-                >
+                <p id="contact-email-error" role="alert" className="font-mono text-xs text-brand">
                   {t(errors.email.message)}
                 </p>
               ) : null}
@@ -165,41 +155,25 @@ export function Contact() {
                 rows={5}
                 placeholder={t('contact.formMsgPh')}
                 aria-invalid={Boolean(errors.message)}
-                aria-describedby={
-                  errors.message ? 'contact-message-error' : undefined
-                }
+                aria-describedby={errors.message ? 'contact-message-error' : undefined}
                 className="w-full resize-y rounded-md border border-border bg-bg-input px-4 py-3 text-sm text-text placeholder:text-text-faint transition-colors duration-150 focus:border-border-brand focus:outline-none"
                 {...register('message')}
               />
               {errors.message?.message ? (
-                <p
-                  id="contact-message-error"
-                  role="alert"
-                  className="font-mono text-xs text-brand"
-                >
+                <p id="contact-message-error" role="alert" className="font-mono text-xs text-brand">
                   {t(errors.message.message)}
                 </p>
               ) : null}
             </div>
 
-            <Button
-              type="submit"
-              fullWidth
-              disabled={submitState === 'loading'}
-            >
+            <Button type="submit" fullWidth disabled={submitState === 'loading'}>
               <Send className="h-4 w-4" aria-hidden="true" />
               <span>
-                {submitState === 'loading'
-                  ? t('contact.formSending')
-                  : t('contact.formSend')}
+                {submitState === 'loading' ? t('contact.formSending') : t('contact.formSend')}
               </span>
             </Button>
 
-            <div
-              role="status"
-              aria-live="polite"
-              className="min-h-6 text-center font-mono text-xs"
-            >
+            <div role="status" aria-live="polite" className="min-h-6 text-center font-mono text-xs">
               {submitState === 'success' ? (
                 <p className="inline-flex items-center justify-center gap-1.5 text-emerald-500">
                   <CheckCircle2 className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -227,9 +201,7 @@ export function Contact() {
             <h3 className="font-mono text-xs font-bold tracking-widest text-text-muted uppercase">
               {t('contact.whatsappTitle')}
             </h3>
-            <p className="mt-1.5 text-sm text-text-muted">
-              {t('contact.whatsappHint')}
-            </p>
+            <p className="mt-1.5 text-sm text-text-muted">{t('contact.whatsappHint')}</p>
             <a
               href={siteConfig.whatsappUrl}
               target="_blank"

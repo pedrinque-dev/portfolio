@@ -25,11 +25,7 @@ export function Home() {
 
   return (
     <>
-      <PageMeta
-        title={t('meta.homeTitle')}
-        description={t('meta.homeDescription')}
-        path="/"
-      />
+      <PageMeta title={t('meta.homeTitle')} description={t('meta.homeDescription')} path="/" />
       <Hero />
       <About />
       <Stacks />

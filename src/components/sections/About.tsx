@@ -40,12 +40,8 @@ export function About() {
         className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-12"
       >
         <div className="space-y-5 lg:col-span-7">
-          <p className="text-base sm:text-lg leading-relaxed text-text-muted">
-            {t('about.p1')}
-          </p>
-          <p className="text-base sm:text-lg leading-relaxed text-text-muted">
-            {t('about.p2')}
-          </p>
+          <p className="text-base sm:text-lg leading-relaxed text-text-muted">{t('about.p1')}</p>
+          <p className="text-base sm:text-lg leading-relaxed text-text-muted">{t('about.p2')}</p>
 
           <div className="flex flex-wrap gap-3 pt-3">
             <a
@@ -86,10 +82,7 @@ export function About() {
             {facts.map((fact) => {
               const Icon = fact.icon;
               return (
-                <div
-                  key={fact.label}
-                  className="flex items-start gap-4 py-4 first:pt-0 last:pb-0"
-                >
+                <div key={fact.label} className="flex items-start gap-4 py-4 first:pt-0 last:pb-0">
                   <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-border-brand bg-brand-dim text-brand">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </div>
@@ -101,9 +94,7 @@ export function About() {
                       {fact.value}
                     </dd>
                     {fact.detail ? (
-                      <dd className="mt-0.5 text-sm text-text-muted">
-                        {fact.detail}
-                      </dd>
+                      <dd className="mt-0.5 text-sm text-text-muted">{fact.detail}</dd>
                     ) : null}
                   </div>
                 </div>

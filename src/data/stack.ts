@@ -22,12 +22,7 @@ export interface StackItem {
   color: string;
 }
 
-export const stackCategories: StackCategory[] = [
-  'frontend',
-  'backend',
-  'database',
-  'tools',
-];
+export const stackCategories: StackCategory[] = ['frontend', 'backend', 'database', 'tools'];
 
 export const stackItems: StackItem[] = [
   {

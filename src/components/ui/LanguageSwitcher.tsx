@@ -27,9 +27,7 @@ export function LanguageSwitcher({ className = '' }: LanguageSwitcherProps) {
         aria-pressed={currentLang === 'pt'}
         aria-label={t('nav.langPt')}
         className={`cursor-pointer rounded-full px-2.5 py-1 font-bold tracking-wider transition-colors duration-150 ${
-          currentLang === 'pt'
-            ? 'bg-brand text-white'
-            : 'text-text-muted hover:text-text'
+          currentLang === 'pt' ? 'bg-brand text-white' : 'text-text-muted hover:text-text'
         }`}
       >
         PT
@@ -43,9 +41,7 @@ export function LanguageSwitcher({ className = '' }: LanguageSwitcherProps) {
         aria-pressed={currentLang === 'en'}
         aria-label={t('nav.langEn')}
         className={`cursor-pointer rounded-full px-2.5 py-1 font-bold tracking-wider transition-colors duration-150 ${
-          currentLang === 'en'
-            ? 'bg-brand text-white'
-            : 'text-text-muted hover:text-text'
+          currentLang === 'en' ? 'bg-brand text-white' : 'text-text-muted hover:text-text'
         }`}
       >
         EN

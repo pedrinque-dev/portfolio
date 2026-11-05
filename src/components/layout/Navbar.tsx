@@ -110,10 +110,7 @@ export function Navbar() {
           {siteConfig.logo}
         </Link>
 
-        <nav
-          aria-label={t('nav.mainLabel')}
-          className="hidden md:flex md:items-center md:gap-8"
-        >
+        <nav aria-label={t('nav.mainLabel')} className="hidden md:flex md:items-center md:gap-8">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (

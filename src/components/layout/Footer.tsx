@@ -13,9 +13,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-bg-alt py-8">
       <Container className="flex flex-wrap items-center justify-between gap-4">
-        <span className="font-mono text-base font-bold text-brand">
-          {siteConfig.logo}
-        </span>
+        <span className="font-mono text-base font-bold text-brand">{siteConfig.logo}</span>
 
         <p className="text-center text-xs sm:text-sm text-text-muted">
           {t('footer.copyPrefix')}{' '}

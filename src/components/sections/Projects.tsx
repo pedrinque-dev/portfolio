@@ -37,10 +37,7 @@ export function Projects() {
               }}
               className="flex"
             >
-              <Card
-                interactive
-                className="group flex w-full flex-col overflow-hidden"
-              >
+              <Card interactive className="group flex w-full flex-col overflow-hidden">
                 <Link
                   to={`/projects/${project.slug}`}
                   aria-label={`${title} — ${t('projects.caseStudy')}`}
@@ -117,10 +114,7 @@ export function Projects() {
                           aria-label={`${t('projects.liveDemo')} - ${title}`}
                           className="inline-flex items-center gap-1.5 rounded-md border border-brand bg-brand px-3 py-1.5 text-xs font-medium text-white transition-colors duration-150 hover:border-brand-bright hover:bg-brand-bright"
                         >
-                          <ExternalLink
-                            className="h-3.5 w-3.5"
-                            aria-hidden="true"
-                          />
+                          <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
                           <span>{t('projects.liveDemo')}</span>
                         </a>
                       ) : null}

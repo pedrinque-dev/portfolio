@@ -62,9 +62,7 @@ export function ProjectDetail() {
             ) : null}
           </div>
 
-          <p className="mt-4 text-base sm:text-lg leading-relaxed text-text-muted">
-            {description}
-          </p>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-text-muted">{description}</p>
 
           <div className="mt-8 overflow-hidden rounded-lg border border-border bg-bg-card shadow-card">
             <picture>
